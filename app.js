@@ -11,7 +11,10 @@ function moveZeroToEnd(array) {
         }
     }
     const mergedArray = allOtherNumbers.concat(onlyZeroes);
-    console.log(mergedArray);
+    return mergedArray;
 }
 
-moveZeroToEnd(numbers);
+console.log(moveZeroToEnd([1, 2, 0, 0, 4, 0, 5]));
+console.log(moveZeroToEnd([0, 0, 2, 0, 5]));
+console.log(moveZeroToEnd([4, 4, 5]));
+console.log(moveZeroToEnd([0, 0]));
